@@ -1,0 +1,26 @@
+.custom-datepicker-modal {
+    max-height: 90%;
+    overflow-y: hidden;
+}
+
+.footer {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .save-btn {
+      margin: 0px 0px 0px 16px;
+    }
+} 
+ 
+.btn-container {
+    margin: 10px;
+    margin-top: 20px;
+    border: 1px solid royalblue;
+    padding: auto;
+    .btn {
+        margin: 1%;
+        width: 48%;
+    }
+ }
+ 

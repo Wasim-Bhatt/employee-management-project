@@ -1,0 +1,15 @@
+
+<div class="custom-datepicker-modal">
+    <div class="btn-container">
+      <button class="btn" mat-raised-button color="primary" (click)="selectToday()">Today</button>
+      <button class="btn" mat-raised-button color="primary" (click)="selectNextMonday()">Next Monday</button>
+      <button class="btn" mat-raised-button color="primary" (click)="selectNextTuesday()">Next Tuesday</button>
+      <button class="btn" mat-raised-button color="primary" (click)="selectAfterWeek()">After 1 Week</button>
+    </div>
+    <mat-calendar [(selected)]="selectedDate"></mat-calendar>
+    <div class="footer">
+      <button mat-raised-button (click)="cancel()">Cancel</button>
+      <button mat-raised-button color="primary" class="save-btn" (click)="save()">Save</button>
+    </div>
+  </div>
+  

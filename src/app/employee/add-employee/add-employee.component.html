@@ -1,0 +1,50 @@
+<div class="form-container">
+  <mat-toolbar color="primary" class="toolbar">
+    <button mat-icon-button (click)="goBack()">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span>Add Employee Details</span>
+  </mat-toolbar>
+
+  <form [formGroup]="employeeForm" class="form-content">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Employee name</mat-label>
+      <mat-icon matPrefix>person</mat-icon>
+      <input matInput formControlName="name" placeholder="Enter employee name" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Select role</mat-label>
+      <mat-icon matPrefix>badge</mat-icon>
+      <mat-select formControlName="role">
+        <mat-option value="admin">Admin</mat-option>
+        <mat-option value="manager">Manager</mat-option>
+        <mat-option value="developer">Developer</mat-option>
+      </mat-select>
+    </mat-form-field>   
+    <div class="date-container">
+      <mat-form-field appearance="outline" class="date-field">
+        <mat-label>Start Date</mat-label>
+        <mat-icon matPrefix>calendar_today</mat-icon>
+        <input matInput (click)="openCalendar('startDate')" formControlName="startDate">
+        <button mat-icon-button matSuffix (click)="openCalendar('startDate')">
+          <mat-icon>calendar_today</mat-icon>
+        </button>
+      </mat-form-field>
+      <span class="date-arrow">→</span>
+      <mat-form-field appearance="outline" class="date-field">
+        <mat-label>End Date</mat-label>
+        <mat-icon matPrefix>calendar_today</mat-icon>
+        <input matInput (click)="openCalendar('endDate')" formControlName="endDate">
+        <button mat-icon-button matSuffix (click)="openCalendar('endDate')">
+          <mat-icon>calendar_today</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    
+  </form>
+  <div class="action-buttons">
+    <button mat-flat-button color="warn" (click)="onCancel()" >Cancel</button>
+    <button mat-flat-button color="primary" (click)="saveEmployee()" class="save-btn">Save</button>
+  </div>
+</div>

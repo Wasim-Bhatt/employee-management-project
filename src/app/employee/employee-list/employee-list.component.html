@@ -1,0 +1,59 @@
+<div class="container">
+    <mat-toolbar color="primary" class="header">
+      <span>Employee List</span>
+    </mat-toolbar>
+    <div *ngIf="currentEmployees?.length == 0 && previousEmployees?.length == 0" class="empty-state">
+      <img src="assets/not-found.svg" alt="No records found" class="empty-image" />
+      <p>No employee records found</p>
+    </div>
+  <div class="list-container" *ngIf="currentEmployees?.length || previousEmployees?.length">
+    <div *ngIf="currentEmployees?.length">
+      <div class="list-header">Current employees</div>
+      <div  *ngFor="let employee of currentEmployees; let i = index;">
+        <div class="flex-row">
+          <div class="list">
+            <h2 class="list-title">{{employee.name}}</h2>
+            <p class="list-subtitle margin-top-6">{{employee.role}}</p>
+            <span class="list-date margin-top-6">From {{employee.startDate}}</span>
+          </div>
+          <div>
+            <button mat-icon-button color="primary" (click)="editEmployee(employee)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="deleteEmployee(employee.id ? employee.id : 0)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div *ngIf="i < currentEmployees.length-1" class="line"></div>
+      </div>
+    </div>
+    <div *ngIf="previousEmployees?.length">
+      <div class="list-header">Previous employees</div>
+      <div *ngFor="let employee of previousEmployees let i = index;">
+        <div class="flex-row">
+          <div class="list">
+            <h2 class="list-title">{{employee.name}}</h2>
+            <p class="list-subtitle margin-top-6">{{employee.role}}</p>
+            <span class="list-date margin-top-6">{{employee.startDate}} - {{employee.endDate}}</span>
+          </div>
+          <div>
+            <button mat-icon-button color="primary" (click)="editEmployee(employee)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="deleteEmployee(employee.id ? employee.id : 0)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div *ngIf="i < previousEmployees.length-1" class="line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<button mat-fab color="primary" class="add-button" (click)="addEmployee()">
+  <mat-icon>add</mat-icon>
+</button>
+
+
+ 

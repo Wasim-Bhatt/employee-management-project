@@ -1,0 +1,123 @@
+[debug] [2024-11-29T13:30:25.847Z] ----------------------------------------------------------------------
+[debug] [2024-11-29T13:30:25.850Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting
+[debug] [2024-11-29T13:30:25.850Z] CLI Version:   13.27.0
+[debug] [2024-11-29T13:30:25.850Z] Platform:      darwin
+[debug] [2024-11-29T13:30:25.851Z] Node Version:  v20.10.0
+[debug] [2024-11-29T13:30:25.851Z] Time:          Fri Nov 29 2024 19:00:25 GMT+0530 (India Standard Time)
+[debug] [2024-11-29T13:30:25.851Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-29T13:30:25.855Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-29T13:30:25.855Z] > authorizing via signed-in user (wasimbhat90@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/Adnan/Documents/employee-management-system/employee-management-system/src/app/shared
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-11-29T13:31:14.415Z] Checked if tokens are valid: true, expires at: 1732890446681
+[debug] [2024-11-29T13:31:14.415Z] Checked if tokens are valid: true, expires at: 1732890446681
+[debug] [2024-11-29T13:31:14.416Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-11-29T13:31:14.417Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"emp-management-system","name":"emp-management-system"}
+[debug] [2024-11-29T13:31:16.352Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-11-29T13:31:16.352Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-11-29T13:31:16.865Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID emp-management-system. Please try again with a unique project ID.
+[debug] [2024-11-29T13:31:40.595Z] ----------------------------------------------------------------------
+[debug] [2024-11-29T13:31:40.597Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting
+[debug] [2024-11-29T13:31:40.598Z] CLI Version:   13.27.0
+[debug] [2024-11-29T13:31:40.598Z] Platform:      darwin
+[debug] [2024-11-29T13:31:40.598Z] Node Version:  v20.10.0
+[debug] [2024-11-29T13:31:40.598Z] Time:          Fri Nov 29 2024 19:01:40 GMT+0530 (India Standard Time)
+[debug] [2024-11-29T13:31:40.598Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-29T13:31:40.602Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-29T13:31:40.602Z] > authorizing via signed-in user (wasimbhat90@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/Adnan/Documents/employee-management-system/employee-management-system/src/app/shared
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-11-29T13:32:07.473Z] Checked if tokens are valid: true, expires at: 1732890446681
+[debug] [2024-11-29T13:32:07.474Z] Checked if tokens are valid: true, expires at: 1732890446681
+[debug] [2024-11-29T13:32:07.475Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-11-29T13:32:07.475Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"emp-management","name":"emp-management_sys"}
+[debug] [2024-11-29T13:32:09.371Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-11-29T13:32:09.371Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [display_name] has issue [project display name contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-11-29T13:32:09.910Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [display_name] has issue [project display name contains invalid characters]
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-11-29T13:32:56.221Z] ----------------------------------------------------------------------
+[debug] [2024-11-29T13:32:56.224Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting
+[debug] [2024-11-29T13:32:56.224Z] CLI Version:   13.27.0
+[debug] [2024-11-29T13:32:56.224Z] Platform:      darwin
+[debug] [2024-11-29T13:32:56.224Z] Node Version:  v20.10.0
+[debug] [2024-11-29T13:32:56.224Z] Time:          Fri Nov 29 2024 19:02:56 GMT+0530 (India Standard Time)
+[debug] [2024-11-29T13:32:56.224Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-29T13:32:56.228Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-29T13:32:56.229Z] > authorizing via signed-in user (wasimbhat90@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/Adnan/Documents/employee-management-system/employee-management-system/src/app/shared
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-11-29T13:33:17.719Z] Checked if tokens are valid: true, expires at: 1732890446681
+[debug] [2024-11-29T13:33:17.719Z] Checked if tokens are valid: true, expires at: 1732890446681
+[debug] [2024-11-29T13:33:17.720Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-11-29T13:33:17.721Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"emp-mng-sys","name":"emp-mng-sys"}
+[debug] [2024-11-29T13:33:19.662Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-11-29T13:33:19.662Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-11-29T13:33:20.157Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID emp-mng-sys. Please try again with a unique project ID.
